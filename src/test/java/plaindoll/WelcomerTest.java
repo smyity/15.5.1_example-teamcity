@@ -6,7 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class WelcomerTest {
-
 	@Test
 	public void welcomerSaysWelcome() {
 		assertThat(welcomer.sayWelcome(), containsString("Welcome"));
@@ -32,5 +31,4 @@ public class WelcomerTest {
         public void welcomerSaysNewHunterReply() {
                 assertThat(welcomer.sayHunterReply(), containsString("hunter"));
         }
-
 }
