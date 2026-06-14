@@ -6,10 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class WelcomerTest {
-	
-	private Welcomer welcomer = new Welcomer();
-	// Если хочешь больше веселья и информации про ДевОпс - приходи в мои каналы NotOps (telegram, YT, Boosty, Patreon)
-	// https://t.me/notopsofficial
 
 	@Test
 	public void welcomerSaysWelcome() {
@@ -32,4 +28,9 @@ public class WelcomerTest {
 	public void welcomerSaysSomething(){
 		assertThat(welcomer.saySome(), containsString("something"));
 	}
+        @Test
+        public void welcomerSaysNewHunterReply() {
+                assertThat(welcomer.sayHunterReply(), containsString("hunter"));
+        }
+
 }
